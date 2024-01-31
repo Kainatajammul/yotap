@@ -1,0 +1,96 @@
+.profile-main{
+  
+    width:100%;
+}
+.profile-main .profile-heading{
+    display: flex;
+    justify-content:center;
+    margin-top:6%;
+}
+.profile-main h4{
+    margin-left:5%;
+    margin-top:10px;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    max-width:400px;
+}
+.profile .views{
+    background-color:rgb(249, 248, 248);
+    height:80px;
+    width:170px;
+    display: flex;
+    flex-direction:column;
+    border-radius:7px;
+}
+.profile .views p{
+    margin:8px;
+    color:rgb(186, 184, 184);
+}
+.profile .views h3{
+    margin-left:10px;
+    font-size:19px;
+}
+.profile .clicks{
+    background-color:rgb(249, 248, 248);
+    height:80px;
+    width:170px;
+    border-radius:7px;
+    display:flex;
+    flex-direction:column;
+    border-radius:7px;
+}
+.profile .clicks p{
+    margin:8px;
+    color:rgb(186, 184, 184);
+}
+.profile .clicks h3{
+    margin-bottom:7px;
+    margin-left:10px;
+    font-size:19px;
+}
+.views1{
+    background-color:rgb(249, 248, 248);
+    height:120px;
+    width:170px;
+    border-radius:8px;
+    margin-left:1%;
+}
+.clicks1{
+    background-color:rgb(249, 248, 248);
+    height:120px;
+    width:166px;
+    border-radius:7px;
+}
+.profile .clicks1 h3{
+    margin-bottom:10px;
+    margin-left:5%;
+    font-size:19px;
+}
+.profile .clicks1 p{
+    margin:10px;
+    color:rgb(186, 184, 184);
+}
+.profile .views1 p{
+    margin:10px;
+    color:rgb(186, 184, 184);
+}
+.profile .views1 h3{
+    margin-left:4%;
+    font-size:19px;
+}
+.graphs{
+    margin-top:40px;
+}
+.main-hed-ann1{
+    background: rgb(248, 247, 247);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    border-radius: 9px;
+    font-size: medium;
+}

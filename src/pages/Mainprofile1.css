@@ -1,0 +1,139 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+.screen{
+    display: flex;
+    
+    justify-content: center;
+    max-width: 430px;
+    min-height: 100vh;
+    width: 100%;
+    height: max-content;
+  
+  }
+  .main-profil1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+  .main-profil1 p{
+    width: 96%;
+   margin-bottom: 36px;
+   margin-top: 20px;
+    color: #000;
+
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  }
+  .share-qr-div{
+height: 500px;
+/* flex-shrink: 0; */
+border-radius: 20px;
+background: #F9F4F4;
+width: 100%;
+position: relative;
+display: flex;
+align-items: center;
+flex-direction: column;
+  }
+  .user-id-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -35px;
+  }
+  .user-id-img img{
+    width: 130px;
+  }
+  .line{
+    margin-top: 120px;
+    width: 84.006px;
+height: 1px;
+background: #B7A8A8;
+  }
+  
+  #qr-img{
+    width: 200px;
+    height: 203px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .share-qr-div button{
+    margin: 10px;
+    width: 88%;
+height: 60px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #000;
+color: #FFF;
+
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: none;
+cursor: pointer;
+  }
+  .main-profil1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    width: 120px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #000;
+    border: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+  #active-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    width: 175px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #000;
+    border: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+  #ppp{
+    width: 175px;
+height: 50px;
+flex-shrink: 0;
+background: #FFF;
+
+border:1px solid #C2ADAD;
+color: #7C7373;
+
+text-align: center;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }

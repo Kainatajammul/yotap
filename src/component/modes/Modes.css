@@ -1,0 +1,104 @@
+
+
+.mode-main{
+    display: flex;
+    justify-content:flex-start;
+    height:43px;
+    width:81%;
+    background-color:rgb(244, 243, 243);
+    border-radius:10px;
+    margin-top :80px;
+    margin-right:10px;
+ cursor: pointer;
+}
+.mode-main .mode-left{
+    display: flex;
+    align-items:center;
+    gap:5px;
+    width:70%;
+    height:100%;
+    border-radius:10px;
+    background-color:rgb(244, 243, 243);
+    margin-left:5px;
+    } 
+.mode-main .mode-right{
+    height:100%;
+    margin-left:10px;
+    width:18%;
+   display: flex;
+   justify-content: center;
+   margin-left: 50px;
+}
+
+.card-main{
+    width:100%;
+    margin-top:20px;
+}
+.card-marker{
+    margin-left:39px;
+    width:30%;
+    margin-bottom: 10px;
+}
+
+.marker-text{
+    width:70px;
+   
+    margin-left:10px;
+}
+.card-colors{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    /* margin-right: 30px; */
+    align-items: center;
+    margin-left: 17px;
+}
+.card-colors .white{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:rgb(231, 224, 224);
+}
+.card-colors .black{
+    border-radius: 50%;
+    height:20px;
+    width: 20px;
+    background-color:black;
+}
+.red{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:red;
+}
+.orange{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:orange
+}
+.yellow{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:yellow;
+}
+.green{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:green;
+}
+.blue{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:skyblue;
+}
+.purple{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color:purple;
+}

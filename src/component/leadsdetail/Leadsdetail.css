@@ -1,0 +1,139 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+.leads-detail{
+    width:420px;
+    height:100vh;
+    background-Color:white;
+    margin-top:25px;
+    margin-left:10px;
+}
+.detail-main{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leads-detail .detail-icon{
+    margin-left:px;
+}.leads-detail .detail-heading{
+   
+
+}
+.lead-name{
+   margin-top: 25px;
+    height:45%;
+    width:100%;
+    
+}
+.lead-info{
+    height:100vh;
+}
+.date-main{
+    display: flex;
+    height:20%;
+    width:100%;
+    justify-content: space-between;
+}
+.lead-name .date-images{
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+    height:20%;
+    margin-top:15px;
+    margin-right:15px;
+}
+.cell-main{
+    display: flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+.cell-main .cell-heading{
+    margin-top:10px;
+}
+.cell-main .cell-number{
+ margin-right:16px;
+ margin-top:10px;
+}
+.email-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.email-main .email-para{
+    margin-right: 15px;
+}
+.status-main{
+    display: flex;
+    justify-content:space-between;
+    margin-top:10% ;
+}
+.status-main .status-head{
+    margin-top:10px;
+}
+.status-main .status-para{
+    margin-top:10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.status-main .status-head{
+    margin-top:10px;
+}
+
+.message-main{
+    margin-top:30px;
+}
+.message-main .note-main{
+    display: flex;
+    margin-bottom: 8px;
+    
+}
+.note-main .paragraph{
+    margin-left:5px;
+}
+.message-main .message-box .inputtype{
+    min-height:100px;
+    width:100%;
+    border-radius:10px;
+    outline: none;
+    /* border : 1px solid black; */
+    /* border: none; */
+}
+.detail-btn{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:30px;
+}
+.detail-btn button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:17px;
+    border-radius:30px;
+    background-Color:black;
+    color:white;
+    border:1px solid;
+   
+    /* margin-right:10px; */
+}
+.status-para p{
+    margin: 5px;
+}
+.message-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+}
+@media (max-width: 380px) {
+
+    .manager {
+        width: 89%;
+    }
+}

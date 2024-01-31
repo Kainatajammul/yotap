@@ -1,0 +1,64 @@
+.mainsign{
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup-img{
+    display: flex;
+    justify-content: center;
+   
+}
+.signup-img img{
+    margin-top: 2px;
+    width: 372px;
+    height: 361px;
+
+}
+.form-up{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-up form{
+    width: 80%;
+}
+.form-up label{
+    margin-bottom: 5px;
+}
+.btn-signup{
+    padding :10px;
+    height:40px;
+  
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+.btn-signup button{
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    font-size: 12px;
+
+}
+.backDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    width: 27px;
+    height: 26px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+

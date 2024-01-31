@@ -1,0 +1,43 @@
+.modal-heading{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    font-weight:800;
+}
+.modalpara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 10px;
+   width: 85%;
+   text-align:center;
+   
+}
+.modal-designing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.modal-btn{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.modal-btn button{
+   width:70%;
+   height:50px;
+   display: flex;
+   justify-content: center;
+   text-align:center;
+   border:1px solid rgb(11, 12, 12);
+   border-radius:15px;
+   background-color:rgb(11, 12, 12);  
+   color:white;
+   margin-top:20px;
+}
+.modal-btn :hover{
+    background-color:white;  
+    color:rgb(11, 12, 12);
+}

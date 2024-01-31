@@ -1,0 +1,37 @@
+.form{
+  margin-top:30px;
+  margin-left:30px;
+  width:92%;
+  height:350px;
+}
+.form label{
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 10px !important;
+}
+.form-name{
+  display: flex;
+  justify-content: space-between;
+  width:89%;
+  margin-right:10px;
+}
+.formbutton{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:25px;
+  margin-bottom:10px;
+}
+.formbutton .btn{
+  margin-right:9px;
+}
+.formlabel{
+  margin-top:5px;
+  margin-left:3px;
+  display: flex;
+  flex-direction: column;
+}

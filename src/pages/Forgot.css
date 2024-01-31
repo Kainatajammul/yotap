@@ -1,0 +1,103 @@
+.logomain{
+    height:100vh;
+    width:430px;
+    
+  
+}
+.form-text {
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logoimg{
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.logoimg img{
+    margin-top: 15px;
+    width: 341px;
+    height: 297px;
+
+}
+
+.btn-login{
+    
+    height:40px;
+    width: 100%;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+   
+}
+.btn-login button{
+    padding:10px;
+    width: 30%;
+    border-radius:20px;
+    border: none;
+    background-color:black;
+    color:white;
+    white-space: nowrap;
+    font-size: 11px;
+}
+.password-eyeicon{
+    width:78%;
+    border:1px solid grey;
+    border-radius:7px;
+}
+.eye-icon{
+    margin-left:25px;
+    font-size:20px;
+    width:10%;
+}
+/* <MdOutlineRemoveRedEye onClick={handleicon} Icon={showpassword} style={{marginTop:"10px"}} className='eye-icon' />
+     <RiEyeCloseLine /> */
+     .form-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+     .form-logo input{
+       
+        border-radius: 15px;
+        padding: 0px 14px;
+     }
+     .password-eyeicon{
+        margin-top: 20px;
+     }
+     .form-logo label{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px;
+        width: 78%;
+     }
+     
+     input:focus
+     {
+     background-color:white;
+     }
+    #signup-link-in{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #forgot{
+        display: flex;
+    justify-content: flex-end;
+    width: 87%;
+    margin-top: 10px;
+    }
+    .backDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:black;
+        width: 27px;
+        height: 26px;
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-top: 10px;
+    }

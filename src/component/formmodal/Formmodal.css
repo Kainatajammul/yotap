@@ -1,0 +1,40 @@
+.Main-modal{
+    height:90%;
+    width:360px;
+    background-color:white;
+}
+.Mainformmodal{
+    height:auto;
+    width:80%;
+}
+
+.Mainformmodal .formmodal-img{
+    margin-top:15%;
+}
+.formmodal-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formmodal-btn button{
+    background-color:black;
+    margin-top:10%;
+    border-radius:20px;
+    color:white;
+    font-size:15px;
+    border:1px solid ;
+    padding: 13px;
+    width:30%;
+}
+.formmodal-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formmodal-btn2 button{
+    background-color:white;
+    margin-top:10px;
+    border-radius:20px;
+    color:black;
+    border:transparent;
+}
