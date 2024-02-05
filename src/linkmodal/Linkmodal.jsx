@@ -29,8 +29,7 @@ const Linkmodal = ({ handleClose, open,linkinfo,ishome }) => {
       open={open}
       onClose={() =>{ handleClose(),setisform(false)}}
       aria-labelledby="child-modal-title"
-      aria-describedby="child-modal-description"
-    >
+      aria-describedby="child-modal-description">
       <Box sx={style}>
       <Formmodal linkinfo={linkinfo} ishome={ishome} handleClose={handleClose}/>
       </Box>

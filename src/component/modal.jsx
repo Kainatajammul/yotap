@@ -17,7 +17,7 @@ const style = {
     outline:'none'
   };
   const Mymodal = ({handleClose ,open,headingpara}) => {
-    console.log(open)
+  console.log(open)
   
   return (
     <div>

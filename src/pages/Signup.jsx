@@ -6,9 +6,11 @@ import { auth, db } from '../firebase';
 import { update, ref } from 'firebase/database';
 import { Link } from 'react-router-dom';
 import "./Signup.css";
-var widnowwidth = window.innerWidth
+
 const Signup = () => {
   const navigate = useNavigate();
+
+  let widnowwidth = window.innerWidth
 
   const [info, setinfo] = useState({
     email: '',
@@ -21,45 +23,84 @@ const Signup = () => {
     return emailRegex.test(email);
   };
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const addData = async (e) => {
+    e.preventDefault()
+    if ( info.email && info.password) {
+      await createUserWithEmailAndPassword(auth, info.email, info.password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          localStorage.setItem("tapNowUid", user.uid);
+          update(ref(db, `User/${user.uid}`), {
+            id: user.uid,
+            email: info.email,
+            bgImg: "",
+            bio: "",
+            job: "",
+            colorCode: "#2F80ED",
+            company: "",
+            directMode: false,
+            qrColor: "",
+            qrLogo: "",
+            phone: "",
+            logoImg: "",
+            leadForm: {
+              Fname: true,
+              company: true,
+              email: true,
+              job: true,
+              note: true,
+              phone: true,
+            },
+            // link:{
+            //   title:"",
+            //   value:"",
+            //   Email:"",
 
-    if (!isEmailValid(info.email)) {
-      alert('Invalid email format. Please enter a valid email address.');
-      return;
-    }
+            // },
 
-    await createUserWithEmailAndPassword(auth, info.email, info.password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        localStorage.setItem("yotapid", user.uid);
-        console.log(user);
-        navigate("/");
-
-        setinfo({
-          email: "",
-          password: ""
-        });
-
-        update(ref(db, `User/${user.uid}`), {
-          // ... (your database update logic)
-        });
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
-
-        // Alert when signup fails
-        alert('Signup failed. Please check your email and password.');
+            location: "",
+           
+          }).then(() => {
+            toast.success("New user created sucessfuly");
+            navigate("/home");
+          });
+          console.log(user.uid)
+          
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          console.log(error);
+          if (error.message === "Firebase: Error (auth/invalid-email).") {
+            toast.error("Please enter valid email");
+          } else if (
+            error.message === "Firebase: Error (auth/email-already-in-use)."
+          ) {
+            toast.error("Email already exits");
+          } else if (
+            error.message ===
+            "Firebase: Password should be at least 6 characters (auth/weak-password)."
+          ) {
+            toast.error("Password must be at least 6 characters");
+          
+          
+        }
       });
+      setinfo({
+        email: "",
+        password: "",
+       
+
+      });
+     
+    } else {
+      toast.error("Email , password and user name should not be empty");
+    }
   };
 
   return (
-    <main style={{width:widnowwidth<=375 ?'100%': 430}} >
-      <section>
-        <div className="logoskip">
+   <div style={{width:widnowwidth<=375 ?'100%': 430}}>
+        <div className="logoskip" >
           <Link to="/Login" style={{widows:'50%'}}>
             <div className="backDiv">
               <img
@@ -79,7 +120,7 @@ const Signup = () => {
           <div className='form-up'>
             <h1 style={{ marginTop: "10px", fontWeight: "bold" }}>SIGN UP</h1>
             <p style={{ marginTop: "10px" }}>Enter Your login information</p>
-            <form>
+            <form onSubmit={addData}>
               <div style={{ marginTop: "10px" }}>
                 <label> Email</label>
                 <input
@@ -120,13 +161,12 @@ const Signup = () => {
                 />
               </div>
               <div className='btn-signup'>
-                <button onClick={onSubmit}>Signup</button>
+                <button type='submit'>Signup</button>
               </div>
             </form>
           </div>
         </div>
-      </section>
-    </main>
+        </div>
   );
 }
 

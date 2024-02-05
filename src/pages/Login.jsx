@@ -22,10 +22,10 @@ const Login = () => {
 
   const handleLogin = () => {
     if (variable.email && variable.password) {
-      if (!isEmailValid(variable.email)) {
-        alert('Invalid email format. Please enter a valid email address.');
-        return;
-      }
+      // if (!isEmailValid(variable.email)) {
+      //   alert('Invalid email format. Please enter a valid email address.');
+      //   return;
+      // }
 
       signInWithEmailAndPassword(auth, variable.email, variable.password)
         .then((userCredential) => {
@@ -37,16 +37,10 @@ const Login = () => {
         .catch((error) => {
           const errorMessage = error.message;
           console.log(errorMessage);
-
-          // Check if the error message indicates incorrect email or password
-          if (
-            errorMessage === "Firebase: Error (auth/user-not-found)." ||
-            errorMessage === "Firebase: Error (auth/wrong-password)."
-          ) {
-            alert('Incorrect email or password. Please try again.');
-          } else {
-            alert('Login failed. Please check your email and password.');
+          if(errorMessage == ""){
+            alert("");
           }
+          alert(errorMessage);
         });
     } else {
       // Alert when email or password is missing

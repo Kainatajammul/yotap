@@ -13,13 +13,11 @@ import pic6 from'../../imgs/log.png'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Profile1 = () => {
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    
-    localStorage.removeItem('yotapid');
-    navigate('/Login');
-  };
+const navigate = useNavigate();
+const handleLogout = () => {
+localStorage.removeItem('yotapid');
+navigate('/Login');
+};
   return (
 
     <div className='profile1-main'>

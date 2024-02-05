@@ -65,6 +65,10 @@ background: #B7A8A8;
     margin-top: 40px;
     margin-bottom: 20px;
   }
+  .QRcode{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
   .share-qr-div button{
     margin: 10px;
     width: 88%;

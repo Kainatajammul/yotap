@@ -29,25 +29,25 @@ const Tags = ({ handleClose, open }) => {
 
   return (
     <div>
-      <Modal
-        open={open}
-        onClose={() => { handleClose(); setisform(false); }}
-        aria-labelledby="child-modal-title"
-        aria-describedby="child-modal-description"
-      >
-        <Box sx={style}>
-          <IconButton
-            edge="end"
-            color="inherit"
-            onClick={() => { handleClose(); setisform(false); }}
-            aria-label="close"
-            sx={{ position: 'absolute', top: 32, right: 24, color: 'grey' }}
-          >
-            <CloseIcon />
-          </IconButton>
-          {(isform === false) ? <Maintag setisform={setisform} setlinkinfo={setlinkinfo} /> : (<Formmodal linkinfo={linkinfo} setisform={setisform} />)}
-        </Box>
-      </Modal>
+    <Modal
+    open={open}
+    onClose={() => { handleClose(); setisform(false); }}
+    aria-labelledby="child-modal-title"
+    aria-describedby="child-modal-description"
+    >
+    <Box sx={style}>
+    <IconButton
+    edge="end"
+    color="inherit"
+    onClick={() => { handleClose(); setisform(false); }}
+    aria-label="close"
+    sx={{ position: 'absolute', top: 32, right: 24, color: 'grey' }}
+    >
+    <CloseIcon />
+    </IconButton>
+    {(isform === false) ? <Maintag setisform={setisform} setlinkinfo={setlinkinfo} /> : (<Formmodal linkinfo={linkinfo} setisform={setisform} />)}
+    </Box>
+    </Modal>
     </div>
   );
 };

@@ -55,6 +55,7 @@ const Hero = () => {
     };
     
     getdata();
+ 
     }, []);
   const[herodata,setherodata]=useState({})
 
@@ -67,7 +68,7 @@ let path= window.location.pathname;
     <div className="main-section-inner">
     <div className="logoskip">
       <div className="backDiv1" style={{background: 'white'}}>
-      <SlEye />{'\xa0'}<h1 id='prev-i'>Preview</h1>
+      <SlEye  />{'\xa0'}<a href={`http://localhost:5174/${uid}`} id='prev-i' >Preview</a>
       </div>
     <div></div>
   </div>
@@ -99,10 +100,10 @@ let path= window.location.pathname;
  
     
       <div  className="content-para">
-        <h2 className='heading-name'>{herodata.name}</h2>
-        <p className="para1">{herodata.title}</p>
-        <p className="para1">{herodata.company}</p>
-        <p className="para1">{herodata.location}</p>
+        <h2 className='heading-name'>{herodata?.name}</h2>
+        <p className="para1">{herodata?.title}</p>
+        <p className="para1">{herodata?.company}</p>
+        <p className="para1">{herodata?.location}</p>
       </div>
 
     </div>

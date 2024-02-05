@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Profile.css'
+import { onValue, ref ,} from 'firebase/database';
+import { db } from '../../firebase';
 const Profile = () => {
+  let[profile,setprofile]=useState()
+  var uid=localStorage.getItem("yotapid");
+  useEffect(() => {
+    let getdata = async () => {
+    const starCountRef = ref(db,`User/${uid}/Analytics`);
+    onValue(starCountRef, async(snapshot) => {
+    const data = await snapshot.val();
+    console.log(data);
+    setprofile(data);
+    console.log(setprofile)
+    });
+    };
+    
+    getdata();
+ 
+    }, []);
   return (
     <div className='profile-main'>
     <div className='profile-heading'>
@@ -11,34 +29,21 @@ const Profile = () => {
       
       <div className='views'>
       <p>Total Views</p>
-      <h3>124</h3>
+      <h3>{profile?.totalViews}</h3>
       </div>
       <div className='clicks'>
       <p>Total Link Clicks</p>
-      <h3>534</h3>
+      <h3>{profile?.totalClicks}</h3>
       </div>
       </div>
       <div className='profile'>
       <div className='views'>
       <p>Click Though Rate</p>
-      <h3>16.8%</h3>
+      <h3>{profile?.totalClickRate}</h3>
       </div>
       <div className='clicks'>
       <p>Leads Generated</p>
-      <h3>19</h3>
-      </div>
-      </div>
-      <div className='graphs'>
-      <h4>Past 7 Days</h4>
-      <div className='profile'>
-      <div className='views1'>
-      <p>Views</p>
-      <h3>109</h3>
-      </div>
-      <div className='clicks1'>
-      <p>Leads Generated</p>
-      <h3>35</h3>
-      </div>
+      <h3>{profile?.totalLeads}</h3>
       </div>
       </div>
     </div>
